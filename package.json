@@ -68,9 +68,12 @@
 	},
 	"dependencies": {
 		"@babel/runtime": "^7.17.0",
+		"connect-pg-simple": "^7.0.0",
 		"express": "^4.17.2",
+		"express-session": "^1.17.3",
 		"helmet": "^5.0.2",
 		"morgan": "^1.10.0",
+		"passport-github2": "^0.1.12",
 		"pg": "^8.7.3"
 	},
 	"engines": {
