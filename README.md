@@ -31,6 +31,13 @@ Whenever you commit to main (or e.g. merge a [pull request]) it will get automat
 
 You should now make sure all of the project team are [collaborators] on the repository.
 
+## DB Setup
+
+```
+docker run -p 5432:5432 --name cyf-postgres -e POSTGRES_HOST_AUTH_METHOD=trust -e POSTGRES_USER=$USER -e POSTGRES_DB=cyf -d postgres
+ psql -h localhost -d cyf -f db.sql
+```
+
 ## Scripts
 
 Various scripts are provided in the package file, but many are helpers for other scripts; here are the ones you'll

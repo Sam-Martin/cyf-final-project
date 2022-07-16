@@ -1,0 +1,1 @@
+CREATE TABLE images(id SERIAL PRIMARY KEY, uploader TEXT, contents TEXT, dateAdded TEXT, mimeType TEXT);
